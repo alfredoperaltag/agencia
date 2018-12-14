@@ -42,13 +42,13 @@ $obj->barraNavegacion();
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Curp</label>
                         <input type="text" class="form-control" name=curp id="exampleFormControlInput1" placeholder="PEGA970710HGRLLL11">
-                    </div>
+                    </div>                    
+                </div>
+                <div class="col">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Fecha de Nacimiento</label>
                         <input type="date" class="form-control" name=fechanacimiento id="exampleFormControlInput1">
                     </div>
-                </div>
-                <div class="col">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Familiares</label>
                         <input type="text" class="form-control" name=familiares id="exampleFormControlInput1"
