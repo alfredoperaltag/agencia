@@ -1,6 +1,7 @@
 <?php
 include "conexion.php";
 $_GET['id'];
+$id=$_GET['id'];
 
 $consulta = mysqli_query($conexion, "SELECT * FROM clientes WHERE id =('$_GET[id]')");
 while ($registro = mysqli_fetch_array($consulta)) {
@@ -21,9 +22,8 @@ require 'funciones.php';
     $obj->barraNavegacion();
     ?>
 
-
     <div class="container">
-        <form action="modificarCliente.php" method="POST">
+        <?php echo "<form action='modificarCliente.php?id=$id' method='POST'>"; ?>
             <div class="row">
                 <div class="col">
                     <div class="form-group">
@@ -86,5 +86,5 @@ require 'funciones.php';
 </html>
 <?php
 }
-/* mysqli_close($conexion); */
+mysqli_close($conexion);
 ?>
