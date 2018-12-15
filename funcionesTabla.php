@@ -7,12 +7,12 @@ class funcionesTabla
         ?>
             <thead class="thead-dark">
                 <tr class="text-center">
-                    <th scope="col">Apellido Paterno</th>
-                    <th scope="col">Apellido Materno</th>
+                    <th scope="col">Paterno</th>
+                    <th scope="col">Materno</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Telefono</th>
                     <th scope="col">Curp</th>
-                    <th scope="col">Fecha Nacimiento</th>
+                    <th scope="col">Nacimiento</th>
                     <th scope="col">Familiares</th>
                     <th scope="col">Ruta</th>
                     <th scope="col">Descripcion</th>
