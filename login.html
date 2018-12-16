@@ -18,7 +18,7 @@
   </head>
 
   <body class="text-center container">
-    <form class="formularioLogin.php" method="POST">
+    <form class="form-signin" action="formularioLogin.php" method="POST">
       <img
         class="mb-4"
         src="../../assets/brand/bootstrap-solid.svg"
@@ -30,6 +30,7 @@
       <label for="nombreUsuario" class="sr-only">Nombre de usuario</label>
       <input
         type="text"
+        name="nombreUsuario"
         id="inputEmail"
         class="form-control"
         placeholder="Nombre de usuario"
@@ -39,6 +40,7 @@
       <label for="contrasena" class="sr-only">Contraseña</label>
       <input
         type="password"
+        name="contrasena"
         id="inputPassword"
         class="form-control"
         placeholder="Contraseña"

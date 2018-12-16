@@ -14,7 +14,7 @@ include "conexion.php";
 $consulta = "UPDATE clientes SET nombre='$_POST[nombre]',apellidoPaterno='$_POST[apellidoPaterno]',apellidoMaterno='$_POST[apellidoMaterno]',telefono='$_POST[telefono]',curp='$_POST[curp]',fechanacimiento='$_POST[fechanacimiento]',familiares='$_POST[familiares]',ruta='$_POST[ruta]',descripcion='$_POST[descripcion]' WHERE id=$_GET[id]";
 if (mysqli_query($conexion, $consulta)) {
     echo "<script>
-    window.location.href='Clientes.php';
+    window.location.href='clientes.php';
     alert('Actualizado Correctamente');
     </script>";
 } else {
