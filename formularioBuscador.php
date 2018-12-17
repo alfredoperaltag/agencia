@@ -19,7 +19,7 @@
 
         if ($registro = mysqli_fetch_array($resultado)) 
         {
-            require 'tablaClientes.html';        
+            require 'tablaClientes.php';        
         } else 
         {
             echo '<script type="text/javascript">alert("No se encontraron resultados");</script>';
