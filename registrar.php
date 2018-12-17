@@ -11,9 +11,7 @@
 
 <body>
     <?php
-require 'funciones.php';
-$obj = new funciones();
-$obj->barraNavegacion();
+require 'barraNavegacion.php';
 ?>
 
 

@@ -17,9 +17,7 @@ while ($registro = mysqli_fetch_array($consulta)) {
 </head>
 <body>
 <?php
-require 'funciones.php';
-    $obj = new funciones();
-    $obj->barraNavegacion();
+require 'barraNavegacion.php';    
     ?>
 
     <div class="container">
