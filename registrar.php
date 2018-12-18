@@ -1,3 +1,7 @@
+<?php
+    $registro['apellidoPaterno']="";
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -16,49 +20,50 @@ require 'barraNavegacion.php';
 
 
     <div class="container">
-        <form action="registrarCliente.php" method="POST">
+        <form action="formularioRegistrar.php" method="POST">
             <div class="row">
                 <div class="col">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Nombre(s)</label>
-                        <input type="text" class="form-control" name=nombre id="exampleFormControlInput1" placeholder="nombre(s)">
+                        <input type="text" autocomplete="no" class="form-control" name=nombre id="exampleFormControlInput1" placeholder="nombre(s)"
+                        value="<?php echo $registro['apellidoPaterno'] ?>">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Apellido Paterno del Cliente</label>
-                        <input type="text" class="form-control" name=apellidoPaterno id="exampleFormControlInput1"
+                        <input type="text" autocomplete="no" class="form-control" name=apellidoPaterno id="exampleFormControlInput1"
                             placeholder="Apellido Paterno">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Apellido Materno del Cliente</label>
-                        <input type="text" class="form-control" name=apellidoMaterno id="exampleFormControlInput1"
+                        <input type="text" autocomplete="no" class="form-control" name=apellidoMaterno id="exampleFormControlInput1"
                             placeholder="Apellido Materno">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Numero de Telefono</label>
-                        <input type="text" class="form-control" name=telefono id="exampleFormControlInput1" placeholder="7331234567">
+                        <input type="tel" autocomplete="no" class="form-control" name=telefono id="exampleFormControlInput1" placeholder="7331234567">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Curp</label>
-                        <input type="text" class="form-control" name=curp id="exampleFormControlInput1" placeholder="PEGA970710HGRLLL11">
+                        <input type="text" autocomplete="no" class="form-control" name=curp id="exampleFormControlInput1" placeholder="PEGA970710HGRLLL11">
                     </div>                    
                 </div>
                 <div class="col">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Fecha de Nacimiento</label>
-                        <input type="date" class="form-control" name=fechanacimiento id="exampleFormControlInput1">
+                        <input type="date" autocomplete="no" class="form-control" value="0001-01-01" name=fechanacimiento id="exampleFormControlInput1">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Familiares</label>
-                        <input type="text" class="form-control" name=familiares id="exampleFormControlInput1"
+                        <input type="text" autocomplete="no" class="form-control" name=familiares id="exampleFormControlInput1"
                             placeholder="nombre(s) Apellido Paterno Apellido Materno,">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Ruta</label>
-                        <input type="text" class="form-control" name=ruta id="exampleFormControlInput1" placeholder="Mex - Tij">
+                        <input type="text" autocomplete="no" class="form-control" name=ruta id="exampleFormControlInput1" placeholder="Mex - Tij">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Descripción</label>
-                        <textarea class="form-control" id="descripción" name=descripcion placeholder="Descripción" rows="5"></textarea>
+                        <textarea autocomplete="no" class="form-control" id="descripción" name=descripcion placeholder="Descripción" rows="5"></textarea>
                     </div>
                 </div>
             </div>
@@ -72,7 +77,6 @@ require 'barraNavegacion.php';
             </style>
         </form>
     </div>
-
 
 
     <script src="js/jquery-3.3.1.min.js"></script>

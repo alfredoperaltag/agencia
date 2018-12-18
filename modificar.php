@@ -21,7 +21,7 @@ require 'barraNavegacion.php';
     ?>
 
     <div class="container">
-        <?php echo "<form action='modificarCliente.php?id=$id' method='POST'>"; ?>
+        <?php echo "<form action='formularioModificar.php?id=$id' method='POST'>"; ?>
             <div class="row">
                 <div class="col">
                     <div class="form-group">
