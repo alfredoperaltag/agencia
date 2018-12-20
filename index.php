@@ -1,3 +1,8 @@
+<?php  
+  require('funciones.php');
+  $obj = new funciones();
+  $obj -> verificar_sesion();
+?>
 <!DOCTYPE html>
 <html>
 

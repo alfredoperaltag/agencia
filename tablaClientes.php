@@ -60,7 +60,7 @@
             <td>
               <button
                 class="btn btn-outline-danger"
-                onclick="confirmar(<?php echo $registro['id'] ?>)"
+                onclick="confirmar(<?php echo $id ?>)"
               >
                 Eliminar
               </button>

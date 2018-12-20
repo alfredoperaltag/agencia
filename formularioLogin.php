@@ -5,7 +5,9 @@ $_POST['contrasena'];
 include "conexion.php";
 $consulta = mysqli_query($conexion, "SELECT usuario,contrasena FROM usuarios WHERE usuario='$_POST[nombreUsuario]' and contrasena='$_POST[contrasena]'");
 if($registro = mysqli_fetch_array($consulta)){
-    header('location: index.html');
+    session_start();
+    $_SESSION['usuario'] = $_POST['nombreUsuario'];
+    header('location: index.php');
 } else {
     echo "<script>
     window.location.href = 'login.html';
