@@ -63,6 +63,19 @@
           ><font style="vertical-align: inherit;">Buscar</font></font
         >
       </button>
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="cerrarSesion.php"
+          ><font style="vertical-align: inherit;"
+            ><font style="vertical-align: inherit;">Cerrar sesion </font></font
+          ><span class="sr-only"
+            ><font style="vertical-align: inherit;"
+              ><font style="vertical-align: inherit;">(actual)</font></font
+            ></span
+          ></a
+        >
+      </li>
+      </ul>
     </form>
   </div>
 </nav>
