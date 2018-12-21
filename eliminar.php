@@ -1,4 +1,7 @@
 <?php
+require 'funciones.php';
+$obj = new funciones();
+$obj -> verificar_sesion();
 include "conexion.php";
 $_GET['id'];
 

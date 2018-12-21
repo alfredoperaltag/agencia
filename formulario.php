@@ -1,5 +1,8 @@
 <?php
-    class formulario{
+require 'funciones.php';
+$obj = new funciones();
+$obj -> verificar_sesion();    
+    class formulario{        
         function encabezadoFormulario(){
             ?>                
                 <head>

@@ -1,4 +1,7 @@
 <?php
+require 'funciones.php';
+$obj = new funciones();
+$obj -> verificar_sesion();
 $_GET['id'];
 $_POST['nombre'];
 $_POST['apellidoPaterno'];
