@@ -1,5 +1,5 @@
 <?php
-require 'funciones.php';
+require '../funciones.php';
 $obj = new funciones();
 $obj -> verificar_sesion();
 $_GET['id'];
@@ -13,11 +13,11 @@ $_POST['familiares'];
 $_POST['ruta'];
 $_POST['descripcion'];
 
-include "conexion.php";
+include "../conexion.php";
 $consulta = "UPDATE clientes SET nombre='$_POST[nombre]',apellidoPaterno='$_POST[apellidoPaterno]',apellidoMaterno='$_POST[apellidoMaterno]',telefono='$_POST[telefono]',curp='$_POST[curp]',fechanacimiento='$_POST[fechanacimiento]',familiares='$_POST[familiares]',ruta='$_POST[ruta]',descripcion='$_POST[descripcion]' WHERE id=$_GET[id]";
 if (mysqli_query($conexion, $consulta)) {
     echo "<script>
-    window.location.href='clientes.php';
+    window.location.href='consultaclientes.php';
     alert('Actualizado Correctamente');
     </script>";
 } else {

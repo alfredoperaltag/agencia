@@ -19,16 +19,16 @@
 
 <body>
     <?php
-        require 'barraNavegacion.php';
+        require 'barraNavegacionClientes.php';
     ?>
     <div class="container">
-        <form action="formularioRegistrar.php" method="POST">
+        <form action="consultaRegistrar.php" method="POST">
             <?php
                 $obj = new formulario();
                 $obj -> cuerpoFormulario($nombre,$apellidoPaterno,$apellidoMaterno,$telefono,$curp,$fechanacimiento,$familiares,$ruta,$descripcion);
             ?>       
             <button type="submit" value=enviar class="btn btn-success">Registrar</button>
-            <a href="clientes.php"><button type="button" class="btn btn-secondary">Regresar</button></a>
+            <a href="consultaClientes.php"><button type="button" class="btn btn-secondary">Regresar</button></a>
             <style>
                 .btn {
                     float: right;
@@ -38,7 +38,7 @@
         </form>
     </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

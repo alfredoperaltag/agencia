@@ -9,12 +9,12 @@
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="css/bootstrap.min.css"
+      href="../css/bootstrap.min.css"
     />
   </head>
 
   <body>
-    <?php require 'barraNavegacion.php'; ?>
+    <?php require 'barraNavegacionClientes.php'; ?>
 
     <div class="container-fluid">
       <table class="table">
@@ -75,12 +75,12 @@
     <script>
       function confirmar(id) {
         if (confirm("¿Estas seguro de eliminarlo?")) {
-          window.location.href = "eliminar.php?id=" + id;
+          window.location.href = "eliminarClientes.php?id=" + id;
         }
       }
     </script>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

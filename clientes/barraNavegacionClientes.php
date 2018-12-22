@@ -4,7 +4,7 @@
   }
 </style>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="index.html"
+  <a class="navbar-brand" href="../index.php"
     ><font style="vertical-align: inherit;"
       ><font style="vertical-align: inherit;">Davidtours</font></font
     ></a
@@ -23,7 +23,7 @@
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html"
+        <a class="nav-link" href="../index.php"
           ><font style="vertical-align: inherit;"
             ><font style="vertical-align: inherit;">Inicio </font></font
           ><span class="sr-only"
@@ -34,7 +34,7 @@
         >
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="clientes.php"
+        <a class="nav-link" href="consultaClientes.php"
           ><font style="vertical-align: inherit;"
             ><font style="vertical-align: inherit;">Clientes</font></font
           ><span class="sr-only"
@@ -46,7 +46,7 @@
       </li>
     </ul>
     <form
-      action="formularioBuscador.php"
+      action="consultaBuscar.php"
       method="GET"
       class="form-inline mt-2 mt-md-0"
     >
@@ -57,6 +57,7 @@
         placeholder="Buscar"
         aria-label="Search"
         name="palabraBuscada"
+        autocomplete="off"
       />
       <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
         <font style="vertical-align: inherit;"
@@ -65,7 +66,7 @@
       </button>
       <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="cerrarSesion.php"
+        <a class="nav-link" href="../cerrarSesion.php"
           ><font style="vertical-align: inherit;"
             ><font style="vertical-align: inherit;">Cerrar sesion </font></font
           ><span class="sr-only"
