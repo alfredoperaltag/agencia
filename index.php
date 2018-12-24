@@ -1,8 +1,7 @@
-<?php  
-  require('funciones.php');
-  $obj = new funciones();
-  $obj ->
-verificar_sesion(); ?> <!DOCTYPE html>
+<?php 
+require('funciones.php');
+$obj = new funciones();
+$obj->verificar_sesion(); ?> <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -79,7 +78,7 @@ verificar_sesion(); ?> <!DOCTYPE html>
               </font>
             </p>
             <p>
-              <a class="btn btn-primary btn-lg" href="tareas/tareas.php" role="button">
+              <a class="btn btn-primary btn-lg" href="tareas/consultaTareas.php" role="button">
                 <font style="vertical-align: inherit;">
                   <font style="vertical-align: inherit;">Tareas</font>
                 </font>

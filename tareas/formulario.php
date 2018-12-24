@@ -13,31 +13,28 @@
         require "barraNavegacionTareas.php";
     ?>
     <div class="container">        
-                <form action="consultaNueva.php" method="POST">
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="nombre">Nombre de la Tarea: </label>
-                                <input type="text" name="nombre" class="form-control" placeholder="Nombre de la Tarea"> 
-                            </div>
-                            <div class="form-group">
-                                <label for="descripcion">Descripcion: </label>
-                                <textarea name="descripcion" class="form-control" cols="30" rows="10" placeholder="Descripción"></textarea>
-                            </div>                        
-                         </div>    
+        <form action="consultaNueva.php" method="POST">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="nombre">Nombre de la Tarea: </label>
+                        <input type="text" name="nombre" class="form-control" placeholder="Nombre de la Tarea"> 
                     </div>
-                    <button type="submit" class="btn btn-success">Aceptar</button>
-                    <a href="tareas.php"><button type="button" class="btn btn-secondary">Regresar</button></a>                    
-                    <style>
-                    .btn {
-                        float: right;
-                        margin: 5px;                        
-                    }
-                    </style>
-                </form>
-                
-                   
-        
+                    <div class="form-group">
+                        <label for="descripcion">Descripcion: </label>
+                        <textarea name="descripcion" class="form-control" cols="30" rows="10" placeholder="Descripción"></textarea>
+                    </div>                        
+                    </div>    
+            </div>
+            <button type="submit" class="btn btn-success">Aceptar</button>
+            <a href="tareas.php"><button type="button" class="btn btn-secondary">Regresar</button></a>                    
+            <style>
+            .btn {
+                float: right;
+                margin: 5px;                        
+            }
+            </style>
+        </form>
     </div>
     
 

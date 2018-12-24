@@ -1,7 +1,7 @@
 <?php
-    require "../funciones.php";
-    $obj = new funciones();
-    $obj -> verificar_sesion();
+require "../funciones.php";
+$obj = new funciones();
+$obj->verificar_sesion();
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,17 +14,10 @@
     <script src="main.js"></script>
 </head>
 <body >
-
-    <div class="container-fluid">
-        
-<?php
-    require "barraNavegacionTareas.php";
-
-    include "../conexion.php";
-    $consulta = mysqli_query($conexion, "SELECT * FROM tareas");
-    $registro = mysqli_fetch_array($consulta);
-
-    ?>
+    <div class="container-fluid"> 
+        <?php
+        require "barraNavegacionTareas.php";
+        ?>
         <table class = table>
             <thead class="thead-dark">
                 <tr class="text-center">                                           
@@ -34,9 +27,9 @@
                     <th><a href="formulario.php"><button class="btn btn-success">Nueva</button></a></th>                
                 </tr> 
             </thead>
-    <?php
-        do{        
-    ?> 
+        <?php
+        do {
+            ?> 
             <tbody class = "text-center">
                 <tr>
                     <th><?php echo $registro['nombre'] ?></td>
@@ -45,11 +38,11 @@
                     <td><button class = "btn btn-outline-danger">Eliminar</button></td>
                 </tr>                
             </tbody>
-    <?php
-        } while ($registro = mysqli_fetch_array($consulta));
+        <?php
+
+    } while ($registro = mysqli_fetch_array($consulta));
     ?>          
-        </table>
-        
+        </table>        
     </div>
 
     <script src="../js/jquery-3.3.1.min.js"></script>

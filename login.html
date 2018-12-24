@@ -1,59 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Iniciar Sesion</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="css/bootstrap.min.css"
-    />
-    <!-- Custom styles for this template -->
-    <link href="css/signin.css" rel="stylesheet" />
 
-    <script src="main.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Iniciar Sesion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+  <!-- Custom styles for this template -->
+  <link href="css/signin.css" rel="stylesheet" />
 
-  <body class="text-center container">
-    <form class="form-signin" action="formularioLogin.php" method="POST">
-      <img
-        class="mb-4"
-        src="../../assets/brand/bootstrap-solid.svg"
-        alt=""
-        width="72"
-        height="72"
-      />
-      <h1 class="h3 mb-3 font-weight-normal">Por favor inicia sesion</h1>
-      <label for="nombreUsuario" class="sr-only">Nombre de usuario</label>
-      <input
-        type="text"
-        name="nombreUsuario"
-        id="inputEmail"
-        class="form-control"
-        placeholder="Nombre de usuario"
-        required
-        autofocus
-        autocomplete="off"
-      />
-      <label for="contrasena" class="sr-only">Contraseña</label>
-      <input
-        type="password"
-        name="contrasena"
-        id="inputPassword"
-        class="form-control"
-        placeholder="Contraseña"
-        required
-      />
-      <!-- <div class="checkbox mb-3">
+  <script src="main.js"></script>
+</head>
+
+<body class="text-center container">
+  <form class="form-signin" action="formularioLogin.php" method="POST">
+    <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72" />
+    <h1 class="h3 mb-3 font-weight-normal">Por favor inicia sesion</h1>
+    <label for="nombreUsuario" class="sr-only">Nombre de usuario</label>
+    <input type="text" name="nombreUsuario" id="inputEmail" class="form-control" placeholder="Nombre de usuario"
+      required autofocus autocomplete="off" />
+    <label for="contrasena" class="sr-only">Contraseña</label>
+    <input type="password" name="contrasena" id="inputPassword" class="form-control" placeholder="Contraseña" required />
+    <!-- <div class="checkbox mb-3">
         <label> <input type="checkbox" value="recuerdame" /> Recuerdame </label>
       </div> -->
-      <button class="btn btn-lg btn-primary btn-block" type="submit">
-        Iniciar sesion
-      </button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
-    </form>
-  </body>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">
+      Iniciar sesion
+    </button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+  </form>
+</body>
+
 </html>

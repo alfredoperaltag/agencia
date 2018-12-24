@@ -47,7 +47,7 @@
     </ul>
     <form
       action="consultaBuscar.php"
-      method="GET"
+      method="POST"
       class="form-inline mt-2 mt-md-0"
     >
       <input
