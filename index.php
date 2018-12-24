@@ -79,7 +79,7 @@ verificar_sesion(); ?> <!DOCTYPE html>
               </font>
             </p>
             <p>
-              <a class="btn btn-primary btn-lg" href="#" role="button">
+              <a class="btn btn-primary btn-lg" href="tareas/tareas.php" role="button">
                 <font style="vertical-align: inherit;">
                   <font style="vertical-align: inherit;">Tareas</font>
                 </font>
