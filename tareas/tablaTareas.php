@@ -29,12 +29,13 @@ $obj->verificar_sesion();
             </thead>
         <?php
         do {
+            $id = $registro['idTarea'];
             ?> 
             <tbody class = "text-center">
-                <tr>
+                <tr>                   
                     <th><?php echo $registro['nombre'] ?></td>
-                    <td><?php echo $registro['descripcion'] ?></td>
-                    <td><button class="btn btn-outline-primary">Modificar</button></td>
+                    <td><?php echo $registro['descripcion'] ?></td>                    
+                    <td><?php echo "<a href='consultaModificar.php?$id'><button class='btn btn-outline-primary'>Modificar</button></a>" ?></td>
                     <td><button class = "btn btn-outline-danger">Eliminar</button></td>
                 </tr>                
             </tbody>

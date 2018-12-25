@@ -34,7 +34,7 @@
         >
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="Tareas.php"
+        <a class="nav-link" href="consultaTareas.php"
           ><font style="vertical-align: inherit;"
             ><font style="vertical-align: inherit;">Tareas</font></font
           ><span class="sr-only"
