@@ -1,10 +1,12 @@
 <?php
 require '../funciones.php';
 $obj = new funciones();
-$obj -> verificar_sesion();    
-    class formulario{        
-        function encabezadoFormulario(){
-            ?>                
+$obj->verificar_sesion();
+class formulario
+{
+    function encabezadoFormulario()
+    {
+        ?>                
                 <head>
                     <meta charset="utf-8" />
                     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +15,10 @@ $obj -> verificar_sesion();
                     <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css" />
                 </head>
             <?php
+
         }
-        function cuerpoFormulario($nombre,$apellidoPaterno,$apellidoMaterno,$telefono,$curp,$fechanacimiento,$familiares,$ruta){
+        function cuerpoFormulario($nombre, $apellidoPaterno, $apellidoMaterno, $telefono, $curp, $fechanacimiento, $familiares, $ruta, $descripcion)
+        {
             ?>
                 <div class="row">
                 <div class="col">
@@ -62,12 +66,12 @@ $obj -> verificar_sesion();
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Descripción</label>
-                        <textarea autocomplete="off" class="form-control" id="descripción" name=descripcion placeholder="Descripción" rows="5"
-                        value="<?php echo $descripcion ?>"></textarea>
+                        <textarea autocomplete="off" class="form-control" id="descripción" name=descripcion placeholder="Descripción" rows="5"><?php echo $descripcion ?></textarea>
                     </div>
                 </div>
             </div>
             <?php
+
         }
     }
-?>
+    ?>

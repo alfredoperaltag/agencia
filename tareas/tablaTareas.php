@@ -31,18 +31,18 @@ $obj->verificar_sesion();
         do {
             $id = $registro['idTarea'];
             ?> 
-            <tbody class = "text-center">
-                <tr>                   
-                    <th><?php echo $registro['nombre'] ?></td>
-                    <td><?php echo $registro['descripcion'] ?></td>                    
-                    <td><?php echo "<a href='consultaModificar.php?$id'><button class='btn btn-outline-primary'>Modificar</button></a>" ?></td>
-                    <td><button class = "btn btn-outline-danger">Eliminar</button></td>
-                </tr>                
-            </tbody>
-        <?php
+                        <tbody class = "text-center">
+                            <tr>                   
+                                <th><?php echo $registro['nombre'] ?></td>
+                                <td><?php echo $registro['descripcion'] ?></td>                    
+                                <td><?php echo "<a href='formularioModificar.php?id=$id'><button class='btn btn-outline-primary'>Modificar</button></a>" ?></td>
+                                <td><button class = "btn btn-outline-danger">Eliminar</button></td>
+                            </tr>                
+                        </tbody>
+                    <?php
 
-    } while ($registro = mysqli_fetch_array($consulta));
-    ?>          
+                } while ($registro = mysqli_fetch_array($consulta));
+                ?>          
         </table>        
     </div>
 
