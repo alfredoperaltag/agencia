@@ -13,9 +13,9 @@ class formulario
                     <title>Davidtours | Formulario</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1">
                     <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css" />
-                </head>
+                </head>                                                
             <?php
-
+            require 'barraNavegacionClientes.php';
         }
         function cuerpoFormulario($nombre, $apellidoPaterno, $apellidoMaterno, $telefono, $curp, $fechanacimiento, $familiares, $ruta, $descripcion)
         {

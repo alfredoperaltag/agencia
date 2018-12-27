@@ -1,13 +1,12 @@
 <?php
 include "../conexion.php";
-$_GET['id'];
-$id=$_GET['id'];
+$id = $_GET['id'];
 
 $consulta = mysqli_query($conexion, "SELECT * FROM clientes WHERE id =('$_GET[id]')");
 while ($registro = mysqli_fetch_array($consulta)) {
     $nombre = $registro['nombre'];
     $apellidoPaterno = $registro['apellidoPaterno'];
-    $apellidoMaterno = $registro['apellidoMaterno'];    
+    $apellidoMaterno = $registro['apellidoMaterno'];
     $telefono = $registro['telefono'];
     $curp = $registro['curp'];
     $fechanacimiento = $registro['fechanacimiento'];
@@ -20,19 +19,15 @@ while ($registro = mysqli_fetch_array($consulta)) {
     <?php
     require "formulario.php";
     $obj = new formulario();
-    $obj -> encabezadoFormulario();
+    $obj->encabezadoFormulario();
     ?>
 
-<body>
-    <?php
-        require 'barraNavegacionClientes.php';
-    ?>
-
+<body>    
     <div class="container">
-        <?php echo "<form action='consultaModificar.php?id=$id' method='POST'>";        
-                $obj = new formulario();
-                $obj -> cuerpoFormulario($nombre,$apellidoPaterno,$apellidoMaterno,$telefono,$curp,$fechanacimiento,$familiares,$ruta,$descripcion);
-            ?> 
+        <?php echo "<form action='consultaModificar.php?id=$id' method='POST'>";
+        $obj = new formulario();
+        $obj->cuerpoFormulario($nombre, $apellidoPaterno, $apellidoMaterno, $telefono, $curp, $fechanacimiento, $familiares, $ruta, $descripcion);
+        ?> 
             <button type="submit" value=enviar class="btn btn-outline-primary">Modificar</button>
             <a href="consultaClientes.php"><button type="button" class="btn btn-secondary">Regresar</button></a>
             <style>
@@ -49,6 +44,7 @@ while ($registro = mysqli_fetch_array($consulta)) {
 </body>
 </html>
 <?php
+
 }
 mysqli_close($conexion);
 ?>

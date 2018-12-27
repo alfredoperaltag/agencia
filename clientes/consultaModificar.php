@@ -24,7 +24,6 @@ if (mysqli_query($conexion, $consulta)) {
     echo "<script> alert('Ocurrio un Problema al Actualizar'); </script>";
     echo "Error updating record: " . mysqli_error($conexion);
 }
-
 mysqli_close($conexion);
 ?>
 
