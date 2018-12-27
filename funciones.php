@@ -1,13 +1,12 @@
 <?php
-    class funciones
+class funciones
+{
+    function verificar_sesion()
     {
-        function verificar_sesion()
-        {
-            session_start();
-            if (!isset($_SESSION['usuario']))
-            {
-                header('location: login.html');
-            }
+        session_start();
+        if (!isset($_SESSION['usuario'])) {
+            header('location: ../login.html');
         }
     }
+}
 ?>

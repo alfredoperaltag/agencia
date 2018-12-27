@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <?php
+    <?php 
     require "formulario.php";
     $obj = new formulario;
     $obj->headerFormulario();

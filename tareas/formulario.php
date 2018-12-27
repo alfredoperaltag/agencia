@@ -1,4 +1,7 @@
 <?php
+require "../funciones.php";
+$obj = new funciones;
+$obj->verificar_sesion();
 class formulario
 {
     function headerFormulario()

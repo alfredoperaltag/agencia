@@ -1,4 +1,7 @@
 <?php
+require "../funciones.php";
+$obj = new funciones;
+$obj->verificar_sesion();
 $_GET['id'];
 include "../conexion.php";
 $consulta = "DELETE FROM tareas WHERE idTarea = '$_GET[id]'";
