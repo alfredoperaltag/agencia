@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <?php require 'barraNavegacionClientes.php'; ?>
+    <?php require 'barraNavegacionClientes.html'; ?>
 
     <div class="container-fluid">
       <table class="table">
@@ -39,15 +39,19 @@
         </thead>
         <tbody class="text-center">
           <tr>
-            <?php do { $id = $registro['id']; ?>
+            <?php do {
+              $id = $registro['id']; ?>
             <th><?php echo $registro['apellidoPaterno'] ?></th>
             <td><?php echo $registro['apellidoMaterno'] ?></td>
             <td><?php echo $registro['nombre'] ?></td>
             <td><?php echo $registro['telefono'] ?></td>
             <td><?php echo $registro['curp'] ?></td>
             <td>
-              <?php setlocale(LC_TIME, 'spanish'); echo strftime('%d-%b-%Y',
-              strtotime($registro['fechanacimiento']))?>
+              <?php setlocale(LC_TIME, 'spanish');
+              echo strftime(
+                '%d-%b-%Y',
+                strtotime($registro['fechanacimiento'])
+              ) ?>
             </td>
             <td><?php echo $registro['familiares'] ?></td>
             <td><?php echo $registro['ruta'] ?></td>
@@ -55,7 +59,7 @@
             <td>
               <?php echo "<a href='modificar.php?id=$id'
                 ><button class='btn btn-outline-primary'>Modificar</button></a
-              >"?>
+              >" ?>
             </td>
             <td>
               <button
@@ -66,8 +70,9 @@
               </button>
             </td>
           </tr>
-          <?php } while ($registro = mysqli_fetch_array($resultado));
-          mysqli_close($conexion); ?>
+          <?php 
+        } while ($registro = mysqli_fetch_array($resultado));
+        mysqli_close($conexion); ?>
         </tbody>
       </table>
     </div>

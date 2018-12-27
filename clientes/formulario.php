@@ -15,7 +15,7 @@ class formulario
                     <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css" />
                 </head>                                                
             <?php
-            require 'barraNavegacionClientes.php';
+            require 'barraNavegacionClientes.html';
         }
         function cuerpoFormulario($nombre, $apellidoPaterno, $apellidoMaterno, $telefono, $curp, $fechanacimiento, $familiares, $ruta, $descripcion)
         {

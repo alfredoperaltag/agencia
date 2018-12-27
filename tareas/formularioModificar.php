@@ -13,7 +13,7 @@ while ($registro = mysqli_fetch_array($consulta)) {
     require "formulario.php";
     $obj = new formulario;
     $obj->headerFormulario();
-    require "barraNavegacionTareas.php";
+    require "barraNavegacionTareas.html";
     ?>
     <body>    
         <div class="container">

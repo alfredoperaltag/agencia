@@ -8,7 +8,7 @@
 
 <body>
     <?php
-    require "barraNavegaciontareas.php";
+    require "barraNavegacionTareas.html";
     ?>
     <div class="container">
         <form action="consultaNueva.php" method="POST">    

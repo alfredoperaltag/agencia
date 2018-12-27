@@ -11,7 +11,7 @@
 <body >
     <div class="container-fluid"> 
         <?php
-        require "barraNavegacionTareas.php";
+        require "barraNavegacionTareas.html";
         ?>
         <table class = table>
             <thead class="thead-dark">

@@ -11,6 +11,7 @@ if (empty($palabraBuscada)) {
 } else {
     include "../conexion.php";
     $consulta = mysqli_query($conexion, "SELECT * FROM tareas WHERE nombre LIKE '%" . $palabraBuscada . "%' OR descripcion LIKE '%" . $palabraBuscada . "%'");
+    mysqli_close($conexion);
     if ($registro = mysqli_fetch_array($consulta)) {
         require "tablaTareas.php";
     } else {
