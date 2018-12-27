@@ -24,7 +24,7 @@ $obj->verificar_sesion();
                     <th>Nombre</th>
                     <th>Descripción</th>
                     <th>Acciones</th>
-                    <th><a href="formulario.php"><button class="btn btn-success">Nueva</button></a></th>                
+                    <th><a href="formularioRegistrar.php"><button class="btn btn-success">Nueva</button></a></th>                
                 </tr> 
             </thead>
         <?php
