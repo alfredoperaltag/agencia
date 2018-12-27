@@ -1,7 +1,7 @@
 <?php
 require '../funciones.php';
 $obj = new funciones();
-$obj -> verificar_sesion();
+$obj->verificar_sesion();
 include "../conexion.php";
 $_GET['id'];
 
@@ -16,5 +16,5 @@ if (mysqli_query($conexion, $consulta)) {
     </script>';
     echo "Error deleting record: " . mysqli_error($conexion);
 }
-
 mysqli_close($conexion);
+?>

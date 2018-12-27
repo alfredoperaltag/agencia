@@ -36,7 +36,7 @@ $obj->verificar_sesion();
                                 <th><?php echo $registro['nombre'] ?></td>
                                 <td><?php echo $registro['descripcion'] ?></td>                    
                                 <td><?php echo "<a href='formularioModificar.php?id=$id'><button class='btn btn-outline-primary'>Modificar</button></a>" ?></td>
-                                <td><button class = "btn btn-outline-danger">Eliminar</button></td>
+                                <td><button class="btn btn-outline-danger" onclick="confirmar(<?php echo $id ?>)">Eliminar</button></td>
                             </tr>                
                         </tbody>
                     <?php
@@ -45,6 +45,14 @@ $obj->verificar_sesion();
                 ?>          
         </table>        
     </div>
+
+    <script>
+    function confirmar(id){
+        if (confirm("¿Estas seguro de eliminarlo?")) {
+            window.location.href = "consultaEliminar.php?id=" + id;
+        }
+    }
+    </script>
 
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.css"></script>
