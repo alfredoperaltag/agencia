@@ -17,14 +17,18 @@ while ($registro = mysqli_fetch_array($consulta)) {
 <!DOCTYPE html>
 <html>
     <?php
-    require "formulario.php";
-    $obj = new formulario();
-    $obj->encabezadoFormulario();
+    require "../funciones.php";
+    $obj = new funciones;
+    $obj->head("Modificar");
     ?>
 
-<body>    
+<body>
+<?php
+require "barraNavegacionClientes.html";
+?>     
     <div class="container">
         <?php echo "<form action='consultaModificar.php?id=$id' method='POST'>";
+        require "formulario.php";
         $obj = new formulario();
         $obj->cuerpoFormulario($nombre, $apellidoPaterno, $apellidoMaterno, $telefono, $curp, $fechanacimiento, $familiares, $ruta, $descripcion);
         ?> 

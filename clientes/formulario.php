@@ -1,10 +1,10 @@
 <?php
-require '../funciones.php';
+/* require '../funciones.php';
 $obj = new funciones();
-$obj->verificar_sesion();
+$obj->verificar_sesion(); */
 class formulario
 {
-    function encabezadoFormulario()
+    /* function encabezadoFormulario()
     {
         ?>                
                 <head>
@@ -16,10 +16,10 @@ class formulario
                 </head>                                                
             <?php
             require 'barraNavegacionClientes.html';
-        }
-        function cuerpoFormulario($nombre, $apellidoPaterno, $apellidoMaterno, $telefono, $curp, $fechanacimiento, $familiares, $ruta, $descripcion)
-        {
-            ?>
+        } */
+    function cuerpoFormulario($nombre, $apellidoPaterno, $apellidoMaterno, $telefono, $curp, $fechanacimiento, $familiares, $ruta, $descripcion)
+    {
+        ?>
                 <div class="row">
                 <div class="col">
                     <div class="form-group">

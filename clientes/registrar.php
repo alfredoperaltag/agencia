@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <?php
-    require "formulario.php";
-    $obj = new formulario();
-    $obj->encabezadoFormulario();
+    <?php 
+    require "../funciones.php";
+    $obj = new funciones;
+    $obj->head("Registrar");
     ?>
 
-<body>    
+<body>
+    <?php
+    require "barraNavegacionClientes.html";
+    ?>     
     <div class="container">
         <form action="consultaRegistrar.php" method="POST">
             <?php
+            require "formulario.php";
             $obj = new formulario();
             $obj->cuerpoFormulario("", "", "", "", "", "0001-01-01", "", "", "");
             ?>       
