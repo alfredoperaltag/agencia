@@ -20,7 +20,7 @@ class formulario
     function cuerpoFormulario($nombre, $apellidoPaterno, $apellidoMaterno, $telefono, $curp, $fechanacimiento, $familiares, $ruta, $descripcion)
     {
         ?>
-                <div class="row">
+            <div class="row">
                 <div class="col">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Nombre(s)</label>

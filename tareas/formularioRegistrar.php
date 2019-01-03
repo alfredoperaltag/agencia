@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <?php 
-    require "formulario.php";
-    $obj = new formulario;
-    $obj->headerFormulario();
+    require "../funciones.php";
+    $obj = new funciones;
+    $obj->head("Registrar");
     ?>
 
 <body>
@@ -12,7 +12,8 @@
     ?>
     <div class="container">
         <form action="consultaNueva.php" method="POST">    
-            <?php 
+            <?php
+            require "formulario.php";
             $obj = new formulario();
             $obj->cuerpoFormulario("", "");
             ?>

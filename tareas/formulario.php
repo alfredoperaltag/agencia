@@ -1,10 +1,10 @@
 <?php
-require "../funciones.php";
+/* require "../funciones.php";
 $obj = new funciones;
-$obj->verificar_sesion();
+$obj->verificar_sesion(); */
 class formulario
 {
-    function headerFormulario()
+    /* function headerFormulario()
     {
         ?>        
             <head>
@@ -18,7 +18,7 @@ class formulario
 
         <?php
 
-    }
+    } */
     function cuerpoFormulario($nombre, $descripcion)
     {
         ?>

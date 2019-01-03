@@ -16,9 +16,9 @@ if (empty($_POST['nombre'] && $_POST['descripcion'])) {
     $consulta = "UPDATE tareas SET nombre = '$_POST[nombre]', descripcion = '$_POST[descripcion]' WHERE idTarea = $id";
     if (mysqli_query($conexion, $consulta)) {
         echo "<script>    
-    alert ('Tarea actualizada correctamente');
-    window.location.href = 'consultaTareas.php';
-    </script>";
+        alert ('Tarea actualizada correctamente');
+        window.location.href = 'consultaTareas.php';
+        </script>";
     } else {
         echo "<script> alert ('Ocurrio un problema al actualizar'); </script>";
         echo "Error: " . mysqli_error($conexion);

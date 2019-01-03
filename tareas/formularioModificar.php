@@ -10,16 +10,19 @@ while ($registro = mysqli_fetch_array($consulta)) {
     <!DOCTYPE html>
     <html>
     <?php
-    require "formulario.php";
-    $obj = new formulario;
-    $obj->headerFormulario();
-    require "barraNavegacionTareas.html";
+    require "../funciones.php";
+    $obj = new funciones;
+    $obj->head("Modificar");
     ?>
-    <body>    
+    <body>
+    <?php
+    require "barraNavegacionTareas.html";
+    ?>    
         <div class="container">
         
         <?php
         echo "<form action='consultaModificar.php?id=$id' method='POST'>";
+        require "formulario.php";
         $obj = new formulario;
         $obj->cuerpoFormulario($nombre, $descripcion);
         ?>               

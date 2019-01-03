@@ -7,9 +7,9 @@
     ?>
 
 <body>
-    <?php
-    require "barraNavegacionClientes.html";
-    ?>     
+<?php
+require "barraNavegacionClientes.html";
+?>     
     <div class="container">
         <form action="consultaRegistrar.php" method="POST">
             <?php

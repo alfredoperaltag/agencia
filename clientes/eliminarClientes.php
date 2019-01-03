@@ -2,11 +2,9 @@
 require '../funciones.php';
 $obj = new funciones();
 $obj->verificar_sesion();
-include "../conexion.php";
 $_GET['id'];
-
+include "../conexion.php";
 $consulta = "DELETE FROM clientes WHERE id=('$_GET[id]')";
-
 if (mysqli_query($conexion, $consulta)) {
     header('Location: consultaClientes.php');
 } else {

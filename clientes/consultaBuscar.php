@@ -4,8 +4,10 @@ $obj = new funciones();
 $obj->verificar_sesion();
 $palabraBuscada = $_GET['palabraBuscada'];
 if (empty($palabraBuscada)) {
-    echo '<script type="text/javascript">alert("Ingrese una palabra para buscar");</script>';
-    echo '<script> window.location.href = "consultaClientes.php"; </script>';
+    echo "<script>
+        window.location.href = 'consultaClientes.php';
+        alert ('ingrese una palabra para buscar');
+        </script>";
 } else {
     include "../conexion.php";
     $resultado = mysqli_query($conexion, "SELECT * FROM clientes WHERE nombre LIKE '%" . $palabraBuscada . "%'
@@ -19,9 +21,12 @@ if (empty($palabraBuscada)) {
         OR descripcion LIKE '%" . $palabraBuscada . "%'");
     if ($registro = mysqli_fetch_array($resultado)) {
         require 'indexClientes.php';
+        mysqli_close($conexion);
     } else {
-        echo '<script type="text/javascript">alert("No se encontraron resultados");</script>';
-        echo '<script> window.location.href = "consultaClientes.php"; </script>';
+        echo "<script>
+        window.location.href = 'consultaClientes.php';
+        alert ('No se encontraron resultados');
+        </script>";
     }
 }
 ?>

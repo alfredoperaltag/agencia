@@ -1,6 +1,6 @@
 <?php
 require '../funciones.php';
-$obj = new funciones();
+$obj = new funciones;
 $obj->verificar_sesion();
 $id = $_GET['id'];
 $_POST['nombre'];
@@ -30,7 +30,7 @@ if (empty($_POST['nombre'])) {
         echo "<script> alert('Ocurrio un Problema al Actualizar'); </script>";
         echo "Error updating record: " . mysqli_error($conexion);
     }
+    mysqli_close($conexion);
 }
-mysqli_close($conexion);
 ?>
 
