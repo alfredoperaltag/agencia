@@ -15,7 +15,15 @@
         ?>
         <table class = table>
             <thead class="thead-dark">
-                <tr class="text-center">                
+                <tr class="text-center">
+                <?php
+                do {
+
+                    echo $columna->name;
+
+
+                } while ($columna = mysqli_fetch_field($consulta));
+                ?>
                     <th>Nombre</th>
                     <th>Descripción</th>
                     <th>Acciones</th>
