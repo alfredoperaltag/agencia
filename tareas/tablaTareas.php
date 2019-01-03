@@ -15,7 +15,7 @@
         ?>
         <table class = table>
             <thead class="thead-dark">
-                <tr class="text-center">                                           
+                <tr class="text-center">                
                     <th>Nombre</th>
                     <th>Descripción</th>
                     <th>Acciones</th>
