@@ -13,7 +13,7 @@
             <th scope="col">Descripcion</th>
             <th scope="col">Acciones</th>
             <th scope="col">
-              <a href="registrar.php"
+              <a href="vistas/registrar.php"
                 ><button class="btn btn-success">Registrar</button></a
               >
             </th>
@@ -39,7 +39,7 @@
             <td><?php echo $registro['ruta'] ?></td>
             <td><?php echo $registro['descripcion'] ?></td>
             <td>
-              <?php echo "<a href='modificar.php?id=$id'
+              <?php echo "<a href='vistas/modificar.php?id=$id'
                 ><button class='btn btn-outline-primary'>Modificar</button></a
               >" ?>
             </td>

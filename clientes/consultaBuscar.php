@@ -20,7 +20,7 @@ if (empty($palabraBuscada)) {
         OR ruta LIKE '%" . $palabraBuscada . "%'
         OR descripcion LIKE '%" . $palabraBuscada . "%'");
     if ($registro = mysqli_fetch_array($resultado)) {
-        require 'indexClientes.php';
+        require 'vistas/indexClientes.php';
         mysqli_close($conexion);
     } else {
         echo "<script>

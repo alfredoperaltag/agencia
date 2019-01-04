@@ -16,7 +16,7 @@ $_POST['descripcion'];
 if (empty($_POST['nombre'])) {
     echo "<script>
     alert('El campo Nombre es obligatorio');
-    window.location.href = 'modificar.php?id=$id';
+    window.location.href = 'vistas/modificar.php?id=$id';
     </script>";
 } else {
     include "../conexion.php";
