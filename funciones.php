@@ -20,7 +20,7 @@ class funciones
             rel="stylesheet"
             type="text/css"
             media="screen"
-            href="../../css/bootstrap.min.css"
+            href="../css/bootstrap.min.css"
             />
         </head>
         <?php

@@ -1,5 +1,5 @@
 <?php
-include "../../conexion.php";
+include "../conexion.php";
 $id = $_GET['id'];
 
 $consulta = mysqli_query($conexion, "SELECT * FROM clientes WHERE id =('$_GET[id]')");
@@ -17,18 +17,18 @@ while ($registro = mysqli_fetch_array($consulta)) {
 <!DOCTYPE html>
 <html>
     <?php
-    require "../../funciones.php";
+    require "../funciones.php";
     $obj = new funciones;
     $obj->head("Modificar");
     ?>
 
 <body>
 <?php
-require "../barraNavegacionClientes.html";
+require "barraNavegacionClientes.html";
 ?>     
     <div class="container">
         <?php echo "<form action='consultaModificar.php?id=$id' method='POST'>";
-        require "../formulario.php";
+        require "formulario.php";
         $obj = new formulario();
         $obj->cuerpoFormulario($nombre, $apellidoPaterno, $apellidoMaterno, $telefono, $curp, $fechanacimiento, $familiares, $ruta, $descripcion);
         ?> 
@@ -43,8 +43,8 @@ require "../barraNavegacionClientes.html";
         </form>
     </div>
 
-    <script src="../../js/jquery-3.3.1.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
 <?php

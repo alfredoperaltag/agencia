@@ -53,7 +53,7 @@ $obj->verificar_sesion(); ?> <!DOCTYPE html>
             <p>
               <a
                 class="btn btn-primary btn-lg"
-                href="clientes/vistas/consultaClientes.php"
+                href="clientes/consultaClientes.php"
                 role="button"
               >
                 <font style="vertical-align: inherit;">

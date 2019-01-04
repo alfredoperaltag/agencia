@@ -14,7 +14,7 @@ $_POST['descripcion'];
 
 if (empty($_POST["nombre"])) {
     echo '<script type="text/javascript">
-    window.location.href="vistas/registrar.php";
+    window.location.href="registrar.php";
     alert("¡El campo nombre es obligatorio!");    
     </script>';
 } else {
@@ -25,7 +25,7 @@ if (empty($_POST["nombre"])) {
     } else {
         echo '<script type="text/javascript">
         alert("¡Ocurrio un problema al registrar!");
-        /* window.location.href="vistas/registrar.php"; */
+        /* window.location.href="registrar.php"; */
         </script>';
         echo "Error: " . $sql . "<br>" . mysqli_error($conexion);
     }
