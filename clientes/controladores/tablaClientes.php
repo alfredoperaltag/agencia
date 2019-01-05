@@ -13,7 +13,7 @@
             <th scope="col">Descripcion</th>
             <th scope="col">Acciones</th>
             <th scope="col">
-              <a href="registrar.php"
+              <a href="controladorRegistrar.php"
                 ><button class="btn btn-success">Registrar</button></a
               >
             </th>

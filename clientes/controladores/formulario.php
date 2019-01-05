@@ -1,22 +1,6 @@
 <?php
-/* require '../funciones.php';
-$obj = new funciones();
-$obj->verificar_sesion(); */
 class formulario
 {
-    /* function encabezadoFormulario()
-    {
-        ?>                
-                <head>
-                    <meta charset="utf-8" />
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                    <title>Davidtours | Formulario</title>
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css" />
-                </head>                                                
-            <?php
-            require 'barraNavegacionClientes.html';
-        } */
     function cuerpoFormulario($nombre, $apellidoPaterno, $apellidoMaterno, $telefono, $curp, $fechanacimiento, $familiares, $ruta, $descripcion)
     {
         ?>
