@@ -10,7 +10,7 @@
 require "barraNavegacionClientes.html";
 ?>     
     <div class="container">
-        <form action="subcontroladorRegistrar.php" method="POST">
+        <form action="subcontroladores/subcontroladorRegistrar.php" method="POST">
             <?php
             require "formulario.php";
             $obj = new formulario();
