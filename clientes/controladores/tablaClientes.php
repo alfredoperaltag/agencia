@@ -21,23 +21,24 @@
         </thead>
         <tbody class="text-center">
           <tr>
-            <?php do {
-              $id = $registro['id']; ?>
-            <th><?php echo $registro['apellidoPaterno'] ?></th>
-            <td><?php echo $registro['apellidoMaterno'] ?></td>
-            <td><?php echo $registro['nombre'] ?></td>
-            <td><?php echo $registro['telefono'] ?></td>
-            <td><?php echo $registro['curp'] ?></td>
+            <?php /* do {*/
+            foreach ($registro as $cliente) {
+              $id = $cliente['id']; ?>
+            <th><?php echo $cliente['apellidoPaterno'] ?></th>
+            <td><?php echo $cliente['apellidoMaterno'] ?></td>
+            <td><?php echo $cliente['nombre'] ?></td>
+            <td><?php echo $cliente['telefono'] ?></td>
+            <td><?php echo $cliente['curp'] ?></td>
             <td>
               <?php setlocale(LC_TIME, 'spanish');
               echo strftime(
                 '%d-%b-%Y',
-                strtotime($registro['fechanacimiento'])
+                strtotime($cliente['fechanacimiento'])
               ) ?>
             </td>
-            <td><?php echo $registro['familiares'] ?></td>
-            <td><?php echo $registro['ruta'] ?></td>
-            <td><?php echo $registro['descripcion'] ?></td>
+            <td><?php echo $cliente['familiares'] ?></td>
+            <td><?php echo $cliente['ruta'] ?></td>
+            <td><?php echo $cliente['descripcion'] ?></td>
             <td>
               <?php echo "<a href='modificar.php?id=$id'
                 ><button class='btn btn-outline-primary'>Modificar</button></a
@@ -53,7 +54,7 @@
             </td>
           </tr>
           <?php 
-        } while ($registro = mysqli_fetch_array($resultado));
+        } /* while ($registro = mysqli_fetch_array($resultado)); */
         ?>
         </tbody>
       </table>
