@@ -5,6 +5,8 @@ $registro = mysqli_fetch_array($resultado);
 mysqli_close($conexion); */
 
 require "../modelos/conexion.php";
+$modelo = new Conexion;
+$conexion = $modelo->obtenerConexion();
 $consulta = $conexion->prepare('SELECT * FROM clientes ORDER BY apellidoPaterno');
 $consulta->execute();
 $registro = $consulta->fetchAll();
