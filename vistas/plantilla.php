@@ -593,12 +593,14 @@
                         </div>
                     </div>
                 </div> -->
-                
+                <?php
+                include "modulos/footer.php";
+                ?>
             </div>
+             
             <!-- END MAIN CONTENT-->
             <!-- END PAGE CONTAINER-->
-        </div>
-
+        </div>     
     </div>
 
     <!-- Jquery JS-->
