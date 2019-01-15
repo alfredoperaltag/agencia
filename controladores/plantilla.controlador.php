@@ -3,7 +3,7 @@ class ControladorPlantilla
 {
     public function ctrPlantilla()
     {
-        include "vistas/plantilla.html";
+        include "vistas/plantilla.php";
     }
 
     /* public function enlacesPaginasController()
