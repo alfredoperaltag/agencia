@@ -40,6 +40,7 @@
 
         <?php
         include "modulos/cabezoteMobile.php";
+        include "modulos/menu.php";
         ?>        
 
         <!-- PAGE CONTAINER-->
