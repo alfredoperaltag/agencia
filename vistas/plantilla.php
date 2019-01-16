@@ -52,6 +52,16 @@
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
+            <?php
+            /* include "modulos/inicio.php"; */
+            if (isset($_GET["ruta"])) {
+                if ($_GET["ruta"] == "inicio" ||
+                    $_GET["ruta"] == "clientes" ||
+                    $_GET["ruta"] == "tareas") {
+                    include "modulos/" . $_GET["ruta"] . ".php";
+                }
+            }
+            ?>
                 <!-- <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="row">

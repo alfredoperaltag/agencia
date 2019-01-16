@@ -1,7 +1,7 @@
 <!-- MENU SIDEBAR-->
 <aside class="menu-sidebar d-none d-lg-block">
     <div class="logo justify-content-center">                        
-        <a href="#">
+        <a href="inicio">
             <!-- <img src="vistas/images/icon/logo.png" alt="Cool Admin" /> -->
             <h1>Agenda</h1>
         </a>
@@ -32,8 +32,12 @@
                         <i class="fas fa-chart-bar"></i>Charts</a>
                 </li> -->
                 <li>
-                    <a href="table.html">
-                        <i class="fas fa-table"></i>Tablas</a>
+                    <a href="clientes">
+                        <i class="fas fa-table"></i>Clientes</a>
+                </li>
+                <li>
+                    <a href="tareas">
+                        <i class="fas fa-table"></i>Tareas</a>
                 </li>
                 <!-- <li>
                     <a href="form.html">
