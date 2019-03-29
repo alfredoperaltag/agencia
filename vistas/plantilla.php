@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Agenda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
     <link rel="stylesheet" href="vistas/assets/bootstrap.min.css">
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
